@@ -1,4 +1,4 @@
-
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class ContaTerminal {
@@ -16,6 +16,12 @@ public class ContaTerminal {
 
         System.out.println("Okay, agora digite o número da sua Conta.");
         int numeroConta = bancoDados.nextInt();
+
+        System.out.println("Digite seu saldo!");
+        BigDecimal saldoConta = bancoDados.nextBigDecimal();
+        
+        System.out.println("Olá " + nomeCliente + " obrigado por criar uma conta em nosso banco, sua agência é " + agenciaBanco + ", conta " + numeroConta + " e seu saldo de R$" + saldoConta + " já está disponível para saque.");
+
         
 
 
